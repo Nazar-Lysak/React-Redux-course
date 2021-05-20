@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+
+ul {
+    list-style: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-wrapper {
+    margin: 0 auto;
+    position: absolute;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+height: 80px;
+width: 100%;
+background-color: green;
+position: fixed;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header__logo img {
+   width: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.header__logo {
+    padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar {
+    width: 200px;
+    height: 100%;
+    background-color: green;
+    position: fixed;
+    margin-top: 82px;
+}
+
+.sidebar__nav-list {
+    list-style: none;
+}
+
+.sidebar__nav--item {
+    color: yellow;
+    text-decoration: none;
+    
+}
+
+.sidebar__nav--item:hover {
+    text-decoration: underline;
+}
+
+.profile {
+    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 82px 0 0 202px;
+    height: 100vh;
+    width: 1440px;
+
+}
+
+.profile__img img {
+    height: 350px;
+    width: 100%;
+}
+
+.profile__information {
+    height: 300px;
+    width: 550px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    border: solid 1px grey;
+    border-radius: 5px;
+}
+
+.profile__information--photo {
+    background-color: grey;
+    margin-left: 60px;
+    height: 160px;
+    width: 120px;
+}
+
+.profile__information--photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.textarea {
+    width: 800px;
+    background-color: inherit;
+    border: none;
+    
 }
